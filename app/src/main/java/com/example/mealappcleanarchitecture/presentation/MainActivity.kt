@@ -15,6 +15,8 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.example.mealappcleanarchitecture.domain.model.Category
+import com.example.mealappcleanarchitecture.domain.model.CategoryFilter
+import com.example.mealappcleanarchitecture.presentation.categoryDetailPage.views.CategoryDetailPage
 import com.example.mealappcleanarchitecture.presentation.categoryFilterMeal.views.CategoryScreen
 import com.example.mealappcleanarchitecture.presentation.categoryMeal.views.CategoryFilterScreen
 import com.example.mealappcleanarchitecture.ui.theme.MealAppCleanArchitectureTheme
@@ -58,6 +60,18 @@ fun ControllerNav() {
             val mealObject = Gson().fromJson(decodedJsonMeal, Category::class.java)
            CategoryFilterScreen(navController = navController, categoryObject =mealObject )
         }
+
+        composable(Screen.CategoryDetailPage.route+"/{category}",
+            arguments = listOf(
+                navArgument("category"){type= NavType.StringType}
+            )
+        ){
+            val jsonMeal = it.arguments?.getString("category")
+            val decodedJsonMeal = URLDecoder.decode(jsonMeal, "UTF-8")
+            val mealObject = Gson().fromJson(decodedJsonMeal, CategoryFilter::class.java)
+            CategoryDetailPage(mealObject)
+        }
+
     }
 }
 

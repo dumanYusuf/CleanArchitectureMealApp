@@ -18,7 +18,6 @@ import javax.inject.Inject
 @HiltViewModel
 class CategoryFilterViewModel @Inject constructor(
     private val useCase: categoryFilterUseCase,
-    private val stateHandle: SavedStateHandle,
     ):ViewModel(){
 
 
@@ -26,6 +25,8 @@ class CategoryFilterViewModel @Inject constructor(
     val state: State<CategoryFilterState> =_state
 
     private var job: Job?=null
+
+
 
 
 

@@ -71,7 +71,9 @@ fun CategoryFilterScreen(
                             modifier = Modifier
                                 .size(250.dp)
                                 .clickable {
-                                    //
+                                    val objectCategory=Gson().toJson(filterCategory)
+                                    val encodedJsonMeal = URLEncoder.encode(objectCategory, "UTF-8")
+                                    navController.navigate(Screen.CategoryDetailPage.route+"/$encodedJsonMeal")
                                 },
                             painter = rememberAsyncImagePainter(model = filterCategory.strMealThumb, imageLoader = ImageLoader(context) ),
                             contentDescription =null , contentScale = ContentScale.Crop)
