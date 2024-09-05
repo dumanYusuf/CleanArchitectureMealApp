@@ -15,4 +15,5 @@ ViewModel: Kullanıcı arayüzü ile iş mantığı arasındaki köprüyü kurar
 Bu yapı, kodun okunabilirliğini, bakımını ve test edilebilirliğini artırır. Her bir fonksiyon ve sınıf, belirli bir işlevi yerine getirecek şekilde tasarlanmıştır, bu da uygulamanın daha düzenli ve yönetilebilir olmasını sağlar.
 
 ![image alt](https://github.com/dumanYusuf/CleanArchitectureMealApp/blob/master/cleanMeal1.png?raw=true)
+![image alt](https://github.com/dumanYusuf/CleanArchitectureMealApp/blob/master/cleanMeal2.png?raw=true)
 
