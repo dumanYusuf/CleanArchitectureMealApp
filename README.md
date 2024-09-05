@@ -16,4 +16,5 @@ Bu yapı, kodun okunabilirliğini, bakımını ve test edilebilirliğini artır�
 
 ![image alt](https://github.com/dumanYusuf/CleanArchitectureMealApp/blob/master/cleanMeal1.png?raw=true)
 ![image alt](https://github.com/dumanYusuf/CleanArchitectureMealApp/blob/master/cleanMeal2.png?raw=true)
+![image alt](https://github.com/dumanYusuf/CleanArchitectureMealApp/blob/master/cleanMeal3.png?raw=true)
 
